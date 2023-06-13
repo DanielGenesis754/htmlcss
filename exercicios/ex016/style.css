@@ -1,0 +1,22 @@
+@charset "UTF-8;";
+
+h2{
+    color: white;
+    background-color: darkblue;
+}
+
+#hex {
+    background-color: #00008b;
+}
+
+#rgb {
+    background-color: rgb(0, 0, 139);
+}
+
+#hsl{
+    background-color: hsl(240, 100%, 27%);
+}
+
+#rgba{
+    background-color: rgba(0, 0, 139, 50%);
+}

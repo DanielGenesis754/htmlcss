@@ -10,20 +10,37 @@
         }
         table{
             border: 1px solid black;
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
             
         }
         td, th{
             border: 1px solid black;
             padding: 8px;
         }
+        table > thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:darkslategray;
+        }
         thead, tfoot{
-            background-color: grey;
+            background-color: darkslategray;
             color: white;
+        }
+        tbody > tr:nth-child(even){
+            /*odd = ímpar
+            even = par*/
+            background-color: lightgray;
         }
         .numero{
             text-align: right;
+        }
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
     </style>
 </head>
@@ -31,6 +48,7 @@
     <h1>Criando tabelas grandes</h1>   
     <!--Anatomia para tabelas grandes
         TABLE
+        CAPTION
             THEAD
                 tr, td, th
             TBODY
@@ -39,10 +57,11 @@
                 tr, td, th
     -->
     <table>
+        <caption>Populações das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -66,10 +85,90 @@
                 <td>Paraná</td>
                 <td class="numero">11 835 379</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 659 023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 835 379</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 659 023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 835 379</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 659 023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 835 379</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 659 023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 835 379</td>
+            </tr>
         </tbody>
         <tfoot>
                 <tr>
-                    <th>Total de Habitantes</th>
+                    <th scope="row">Total de Habitantes</th>
                     <td class="numero"><strong>207 750 291</strong></td>
                 </tr>
         </tfoot>

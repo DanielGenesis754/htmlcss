@@ -1,11 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border: 1px solid black;
+            width: 400px;
+            border-collapse: collapse;
+            
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        thead, tfoot{
+            background-color: grey;
+            color: white;
+        }
+        .numero{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Criando tabelas grandes</h1>   
+    <!--Anatomia para tabelas grandes
+        TABLE
+            THEAD
+                tr, td, th
+            TBODY
+                tr, td, th
+            TFOOT
+                tr, td, th
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">14 659 023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="numero">11 835 379</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <tr>
+                    <th>Total de Habitantes</th>
+                    <td class="numero"><strong>207 750 291</strong></td>
+                </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
